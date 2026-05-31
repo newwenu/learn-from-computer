@@ -1,0 +1,12 @@
+[book]
+title = "计算机入门学习"
+authors = ["newwenu"]
+language = "zh-CN"
+src = "src"
+
+[output.html]
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
+no-section-label = true
+additional-css = ["theme/sidebar-collapse.css"]
+additional-js = ["theme/sidebar-collapse.js"]
