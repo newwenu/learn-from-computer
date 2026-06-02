@@ -3,6 +3,7 @@ title = "计算机入门学习"
 authors = ["newwenu"]
 language = "zh-CN"
 src = "src"
+description = "计算机基础知识入门教程"
 
 [output.html]
 default-theme = "ayu"
