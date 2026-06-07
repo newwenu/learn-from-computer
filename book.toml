@@ -3,7 +3,7 @@ title = "计算机入门学习"
 authors = ["newwenu"]
 language = "zh-CN"
 src = "src"
-description = "计算机基础知识入门教程"
+description = "从硬件到网络，讲透每一个概念——一本真正面向零基础的计算机入门书"
 
 [output.html]
 default-theme = "ayu"
