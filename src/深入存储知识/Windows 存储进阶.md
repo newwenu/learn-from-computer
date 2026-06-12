@@ -200,3 +200,9 @@ Windows 和很多程序在工作时会产生临时文件。正常情况下程序
 | WinSxS | 系统组件存储 | 用磁盘清理的"Windows更新清理" |
 
 对大多数用户来说，开启"存储感知"自动清理 + 偶尔运行一次"磁盘清理"就足够了。只有 C 盘空间严重不足时，才需要手动处理 pagefile.sys 和 hiberfil.sys。
+
+---
+
+## 延伸阅读
+
+> 想了解更多存储管理工具的使用？可以参考《你缺失的那门计算机课》的[成为空间管理大师](https://www.criwits.top/missing/manage-storage.html)章节，里面有 WizTree 分析 C 盘的截图教程和 DiskGenius 调整分区的图示。

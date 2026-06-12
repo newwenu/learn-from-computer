@@ -362,6 +362,18 @@
         </script>
         {{/if}}
 
+        <!-- Open external links in new tab -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+                    if (!link.hasAttribute('target')) {
+                        link.setAttribute('target', '_blank');
+                        link.setAttribute('rel', 'noopener noreferrer');
+                    }
+                });
+            });
+        </script>
+
     </div>
     </body>
 </html>
