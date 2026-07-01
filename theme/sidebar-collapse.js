@@ -19,4 +19,26 @@
         });
         btn.innerHTML = checkbox.checked ? '◀' : '▶';
     }
+
+    // Mobile: tap on the right side (page content) to close sidebar
+    function isMobileDevice() {
+        const ua = navigator.userAgent;
+        const isMobileUA = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua);
+        const isIPad = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+        return isMobileUA || isIPad;
+    }
+
+    if (isMobileDevice() && checkbox) {
+        const pageWrapper = document.getElementById('mdbook-page-wrapper');
+        if (pageWrapper) {
+            pageWrapper.addEventListener('click', function (event) {
+                // Only close if sidebar is currently open
+                if (checkbox.checked) {
+                    checkbox.checked = false;
+                    // Trigger change event so other listeners (like the arrow button) update
+                    checkbox.dispatchEvent(new Event('change'));
+                }
+            });
+        }
+    }
 })();

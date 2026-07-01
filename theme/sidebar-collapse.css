@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (hover: hover) and (pointer: fine) {
     #mdbook-sidebar-collapse-btn {
         position: absolute;
         right: 0;
