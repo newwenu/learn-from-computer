@@ -1,5 +1,5 @@
 [book]
-title = "学习你的计算机"
+title = "用懂你的电脑"
 authors = ["newwenu"]
 language = "zh-CN"
 src = "src"
@@ -10,5 +10,5 @@ default-theme = "ayu"
 preferred-dark-theme = "ayu"
 no-section-label = true
 additional-css = ["theme/sidebar-collapse.css", "theme/git-commit-info.css"]
-additional-js = ["theme/sidebar-collapse.js", "theme/git-commit-info.js"]
+additional-js = ["theme/version.js", "theme/sidebar-collapse.js", "theme/git-commit-info.js"]
 git-repository-url = "https://github.com/newwenu/learn-from-computer"

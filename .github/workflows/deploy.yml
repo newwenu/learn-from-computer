@@ -32,6 +32,15 @@ jobs:
         with:
           mdbook-version: 'latest'
       
+      - name: Generate version info
+        run: |
+          SHA=$(git rev-parse --short HEAD)
+          DATE=$(git log -1 --format="%ci")
+          FULL_SHA=$(git rev-parse HEAD)
+          cat > theme/version.js << EOF
+          const version = { sha: "$SHA", fullSha: "$FULL_SHA", date: "$DATE" };
+          EOF
+      
       - name: Build book
         run: mdbook build
       
